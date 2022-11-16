@@ -1,4 +1,4 @@
-FROM golang:1.18-alpine AS builder
+FROM golang:1.19-alpine3.16 AS builder
 ARG VERSION
 
 RUN apk add --no-cache git gcc musl-dev make
